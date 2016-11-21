@@ -1,0 +1,7 @@
+
+{ "ldap":  {
+	"defaultBinding": "443",
+	"legacyConfig": "false",
+	"SSLExpiryWarning": "30"
+	}
+}

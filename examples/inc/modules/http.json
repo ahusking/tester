@@ -1,0 +1,9 @@
+
+{ "http":  {
+	"credentials": "user:pass",
+	"defaultBinding": "80",
+	"legacyConfig": "false",
+	"DefaultURI": "/",
+	"SSLExpiryWarning": "Xdays"
+	}
+}

@@ -1,0 +1,10 @@
+
+{ "http":  {
+	"credentials": "user:pass",
+	"defBinding": "80",
+	"legacyConfig": "false",
+	"defconnType": "http",
+	"defURI": "/",
+	"UserAgent": "Some User-Agent Here"
+	}
+}

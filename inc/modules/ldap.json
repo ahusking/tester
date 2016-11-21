@@ -1,0 +1,10 @@
+{ "ldap":  {
+	"credentials": "user:pass",
+	"defLDAPBinding": "389",
+	"defLDAPsBinding": "636",
+	"defGCBinding": "3268",
+	"legacyConfig": "false",
+	"query": "(sAMAccountName=TestUser)",
+	"basedn": "dc=my,dc=company,dc=com"
+	}
+}
