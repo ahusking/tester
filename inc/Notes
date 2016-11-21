@@ -1,0 +1,49 @@
+
+
+Structure
+/
+	/inc
+		/modules (module specific config/php functions to perform tests)
+			-ldap.json/php
+			-http.json/php
+			-ssl.json/php
+			-tcp.json?
+			-udp.json?
+		/tests (individual tests file per module?)
+			-ldap.json
+			-http.json
+			-ssl.json
+			-tcp.json?
+			-udp.json?
+		-plans.json (master test plans, contain test names from tests dir)
+		-config.php (master php config)
+		-Any required PHP functions, Curl/LDAP/Reporting
+		
+		
+		
+JSON structures:
+/inc
+	/modules
+		module.json
+			{ "modulename":  {
+				"credentials": "user:pass",
+				"defaultBinding": "port",
+				"legacyConfig": "True/False",
+				"DefaultURI": "/",
+				"SSLExpiryWarning": "Xdays"
+				}
+			}
+	/tests
+		module.json
+			{ "modulename": {
+				"TestName": "TestName",
+				"TestEndpoint": "fqdn/ip",
+				"defaultBinding": "True/False",
+				"defaultCredentials": "True/False",
+				"OptionalPort": "Integer",
+				"OptionalCredentials": "user:pass",
+				"OptionalPath": "/uri",
+				"OptionalData": "post?",
+				"OptionalLDAPQuery": "(sAMAccountName=testuser)"
+				}
+			}
